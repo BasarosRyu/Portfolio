@@ -1,0 +1,543 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+li {
+  list-style: none;
+  padding: 2px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+/* ------------------------------------- *\
+***      Navbar latérale                ***
+\* ------------------------------------- */
+.portrait {
+  border-radius: 50%;
+  background-image: url('img/portrait.png');
+  background-position-x: -7px; 
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.div--profil {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.profil {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.navbar {
+  height: 100%;
+  background-color: #282828;
+  position: absolute;
+  width: 18%;
+  z-index: 9;
+}
+
+.navbar-item {
+  width: 100%;
+  color: white;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  opacity: 0.8;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  padding-left: 40px;
+  padding-right: 2px;
+  border-radius: 0;
+  -webkit-transition: padding-left 1s, background-color 1s, width 1s, -webkit-transform 1s;
+}
+
+.navbar-item:hover {
+  opacity: 1;
+  width: 115%;
+  background-color: #282828;
+  padding-left: 65px;
+  padding-right: 25px;
+  -webkit-transform: skew(-30deg);
+}
+
+.navbar-item p {
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform: skew(0deg);
+}
+
+.navbar-item p:hover {
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform: skew(30deg);
+}
+
+.PSactive {
+  -webkit-transition: padding-left 1s, background-color 1s, width 1s, -webkit-transform 1s;
+  background-color: rgba(68, 68, 68, 0.8);
+  border-bottom: 1px solid #bf3922;
+}
+
+/* ----------------------------------- *\
+***     Slider                        ***
+\* ----------------------------------- */
+.slider-container {
+  width: 82%;
+  height: 100%;
+  margin-left: 18%;
+  position: absolute;
+}
+
+.pageSlide {
+  display: none;
+}
+
+.PSactive {
+  display:block;
+}
+
+.contain-page {
+  height: 100%;
+  width: 90%;
+  text-align: center;
+}
+
+
+/* ----------------------------------- *\
+***     Accueil                       ***
+\* ----------------------------------- */
+#pageAccueil {
+  height: 100%;
+  padding-top: -10px;
+  background: url('img/fond.png') no-repeat;
+  opacity: 0.9;
+  background-size: cover;
+}
+
+/*------------------------------------------------------------------------*/
+.accueil-title {
+  position: absolute;
+  right: 150px;
+  top: 150px;
+  color: white;
+  text-align: left;
+}
+
+#accueil-title-p {
+  font-family: 'Capture it';
+  text-shadow: 4px 4px 4px rgba(250,250,250, 0.2);
+  font-size: 2.9em;
+  padding-bottom: 5px;
+}
+
+.accueil-descrip {
+  position: absolute;
+  left: 100px;
+  bottom: 140px;
+  color: white;
+  font-size: 0.9em;
+}
+
+.accueil-title table tr {
+  padding: 2px;
+}
+
+.about-title {
+  font-family: 'Capture it';
+  text-shadow: 4px 4px 4px rgba(250,250,250, 0.2) ;
+  margin-bottom: 15px;
+}
+
+.about-pro-profil {
+  width: 40%;
+  position: absolute;
+  left: 120px;
+  bottom: 80px;
+  color: white;
+  text-align: justify;
+}
+
+.accueil-title table tr td {
+  width: 150px;
+  margin-right: 100px;
+}
+
+
+
+/* ----------------------------------- *\
+***     Coordonnees                   ***
+\* ----------------------------------- */
+#pageCoordonnees {
+  height: 100%;
+  padding-top: -10px;
+  background: url('img/fondCoor1.png') no-repeat;
+  opacity: 0.9;
+  background-size: cover;
+}
+
+.coortitle {
+  font-family: 'Capture it';
+  text-shadow: 4px 4px 4px rgba(250,250,250, 0.2);
+  margin-bottom: 15px;
+}
+
+.coor-desc {
+  position: absolute;
+  left: 120px;
+  bottom: 100px;
+  color: white;
+  text-align: left;
+}
+
+
+/* ----------------------------------- *\
+***     Expérience                    ***
+\* ----------------------------------- */
+#pageExp {
+  height: 100%;
+  padding-top: -10px;
+  background: url('img/fondEXP.png') no-repeat;
+  opacity: 0.9;
+  background-size: cover;
+}
+
+.exp-assistant {
+  position: absolute;
+  right: 100px;
+  top: 150px;
+  width: 40%;
+  text-align: justify;
+  color: white;
+}
+
+.exp-title {
+  font-family: 'Capture it';
+  text-shadow: 4px 4px 4px rgba(250,250,250, 0.2) ;
+  margin-bottom: 15px;
+}
+
+.exp-formation {
+  position: absolute;
+  left: 110px;
+  bottom: 120px;
+  color: white;
+  text-align: justify;
+  width: 40%;
+}
+
+/* ----------------------------------- *\
+***     Compétences                   ***
+\* ----------------------------------- */
+
+#pageComp {
+  height: 100%;
+  padding-top: -10px;
+  background: url('img/fondAbout.png') no-repeat;
+  opacity: 0.9;
+  background-size: cover;
+}
+
+.comp-title {
+  font-family: 'Capture it';
+  text-shadow: 4px 4px 4px rgba(250,250,250, 0.2) ;
+  margin-bottom: 15px;
+}
+
+.comp-fav {
+  position: absolute;
+  right: 150px;
+  top: 150px;
+  text-align: justify;
+  color: white;
+}
+
+.other-comp {
+  position: absolute;
+  left: 110px;
+  bottom: 120px;
+  color: white;
+  text-align: justify;
+}
+
+.other-comp table tr, .comp-fav table tr {
+  padding: 2px;
+}
+
+.other-comp table tr td, .comp-fav table tr td {
+  width: 150px;
+  margin-right: 100px;
+}
+
+/* ----------------------------------- *\
+***     Hobby                         ***
+\* ----------------------------------- */
+#pageHobby {
+  height: 100%;
+  padding-top: -10px;
+  background: url('img/fondHobby.png') no-repeat;
+  opacity: 0.9;
+  background-size: cover;
+}
+
+.hobby-title {
+  font-family: 'Capture it';
+  text-shadow: 4px 4px 4px rgba(250,250,250, 0.2);
+  margin-bottom: 15px;
+}
+
+.hobby-desc {
+  width: 50%;
+  position: absolute;
+  left: 110px;
+  bottom: 70px;
+  color: white;
+  text-align: justify;
+}
+
+.hobby-desc p {
+  font-size: 0.9em;
+  line-height: 1.8;
+}
+
+.hobby-lang {
+  position: absolute;
+  right: 150px;
+  top: 150px;
+  color: white;
+  text-align: justify;
+}
+
+
+/* ----------------------------------- *\
+***     Projet                        ***
+\* ----------------------------------- */
+#pageMyProject {
+  height: 100%;
+  padding-top: -20px;
+  background: url('img/fondProjet.png') no-repeat;
+  opacity: 0.9;
+  background-size: cover;
+}
+
+#github {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+}
+
+#github a:hover{
+  color: red;
+}
+
+#list-projet {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  bottom: 58px;
+  left: 80px;
+  color: white;
+}
+
+#list-projet table {
+  width: 100%;
+  height: 100%;
+}
+
+#list-projet tr {
+  width: 100%;
+  height: 50%;
+}
+.glob-td {
+  margin: 10px;
+}
+
+#list-projet td {
+  width: 30%;
+  margin: 50px;
+}
+
+.img-prez {
+  width: 100%;
+  height: 80%;
+  background-color: #fff;
+}
+
+.title-projet {
+  width: 100%;
+  height: 10%;
+  background-color: rgba(255, 0, 0, 0.5);
+  line-height: 40px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.img-adapt{
+  width: 100%;
+  background-size: cover;
+}
+
+.detail-projet {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  color: white;
+  padding-top: 50px;
+  text-align: left;
+}
+
+.hide {
+  display: none;
+}
+
+.close {
+  font-size: 3.0em;
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.project-title
+{
+  font-family: 'Capture it';
+  text-shadow: 4px 4px 4px rgba(250,250,250, 0.2);
+  margin-bottom: 15px;
+  margin-left: 75px;
+}
+
+.text-desc {
+  padding: 15px;
+  margin-bottom: 50px;
+}
+
+.imgscreen  {
+  width: 50%;
+  float: left;
+  margin: 15px;
+}
+
+#puissance4:hover {
+  border: 3px solid #04416e;
+}
+
+.play-game {
+  width: 800px;
+  margin-left: 150px;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 150px; 
+  text-align: center;
+}
+
+.play-game:hover {
+  background-color: rgba( 255, 0,0, 0.5);
+  border: 3px solid yellow;
+}
+
+.text-desc a:hover {
+  color: red;
+}
+/* ----------------------------------- *\
+***     Media                         ***
+\* ----------------------------------- */
+@media only screen and (max-width: 850px) { 
+
+  .navbar-nav:first-child {
+    display: none;
+  }
+  .list--profil, .portrait, .profil {
+    display: none;
+  }
+
+  .navbar-icon {
+    position: relative;
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: auto 0;
+  }
+
+  .navbar-icon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 0px;
+    left: 15px;
+    top: 5px;
+
+    box-shadow: 0 10px 0 1px white,
+    0 16px 0 1px white,
+    0 22px 0 1px white;
+    z-index: 99;
+  }
+  .navbar  {
+    width: 100%;
+    height: 50px;
+    z-index: 9;
+  }
+
+  .navbar-nav {
+    background-color: #282828;
+    position: relative;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transform: translateY(-355px);
+    z-index: 1;
+  }
+
+  .navbar-nav li {
+    display: block;
+    padding: 5px;
+    background-color: #282828;
+    border-bottom: 1px solid white;
+    padding-left: 150px;
+  }
+
+  .navbar-nav li:hover {
+    padding-left: 175px;
+  }
+
+  .sidebar .navbar-nav {
+    transform: translateY(-11px);
+  }
+
+  .slider-container {
+    padding-top: 50px;
+    margin-left: 0%;
+    width: 100%;
+    z-index: 5;
+  }
+
+  .contain-page {
+    width: 100%;
+  }
+
+  #pageAccueil, #pageCoordonnees, #pageExp, #pageHobby, #pageProjet {
+    background-size: cover;
+  }
+}
+
+

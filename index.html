@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="keywords" content="portfolio, réseau social, wac, web@cademie, webacademie">
+	<link href="http://fr.allfont.net/allfont.css?fonts=capture-it" rel="stylesheet" type="text/css" />
+
+	<title>Portfolio</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<a href="#" class="navbar-icon" id="navbar-icon"></a>
+			<div class="div--profil">
+				<div class="portrait"></div>
+				<span class="profil">Jérôme Cyrus
+					<br/> Développeur Web Fullstack
+				</span>
+			</div>
+			<ul class="navbar-nav">
+				<li class="navbar-item" data-target="#pageAccueil"><p>Accueil</p></li>
+				<li class="navbar-item" data-target="#pageExp"><p>Mon Parcours Web</p></li>
+				<li class="navbar-item" data-target="#pageComp"><p>Mes Compétences</p></li>
+				<li class="navbar-item" data-target="#pageMyProject"><p>Mes projets</p></li>
+				<li class="navbar-item" data-target="#pageHobby"><p>Mes centres d'intérêts</p></li>
+				<li class="navbar-item" data-target="#pageCoordonnees"><p>Mes Coordonnées</p></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="slider-container">
+			<div class="pageSlide PSactive" id="pageAccueil">
+				<div class="contain-page">
+					<div class="accueil-title">
+						<h1 id="accueil-title-p">Portfolio</h1>
+						<table>
+							<tr>
+								<td>Nom Prénom  :</td>
+								<td>Cyrus Jérôme</td>
+							</tr>
+							<tr>
+								<td>Né le :</td>
+								<td>1er Juin 1992</td>
+							</tr>
+							<tr>
+								<td>Une qualité :</td>
+								<td>Curieux</td>
+							</tr>
+							<tr>
+								<td>Un défaut : </td>
+								<td>Indécis</td>
+							</tr>
+							<tr>
+								<td>Nationalité : </td>
+								<td>Française</td>
+							</tr>
+						</table>
+					</div>
+					<div class="about-pro-profil">
+						<h1 class="about-title">Mon profil professionnel</h1>
+						<p>S'il est souvent conseillé de se spécialiser dans un langage, ma première envie est de pouvoir rester polyvalent. Capable de m'adapter en fonctions des langages demandés et répondre aux divers besoins de l'entreprise ou de mon équipe. Cependant, j'avoue avoir une préférence sur des technos comme ReactJS, NodeJS ou encore Symfony.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- ------------------------------------ Partie coordonnes ------------------------------------ -->
+			<div class="pageSlide" id="pageCoordonnees">
+				<div class="contain-page">
+					<div class="coor-desc">
+						<h1 class="coortitle">Comment me joindre</h1>
+						<ul>
+							<li><span class="info">Mail :</span> jerome.cyrus@epitech.eu</li>
+							<li><span class="info">Téléphone : </span> 06 11 12 72 01</li>
+							<li><span class="info">Linkedin : </span> <a href="https://www.linkedin.com/in/jerome-cyrus/">Vers mon profil</a></li>
+							<li><span class="info">Mon CV disponible :</span> <a href="CvJeromeCyrus.pdf" target="_blank"> ici</a> !</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- ------------------------------------ Partie expériences ------------------------------------ -->
+			<div class="pageSlide" id="pageExp">
+				<div class="contain-page">
+					<div class="exp-formation">
+						<h1 class="exp-title">Assistant Pédagogie</h1>
+						<p>Pendant une semaine, ma tâche a été d'aider et de conseiller des élèves issus d'une école de commerce <em>(ISG)</em> qui n'avaient jamais codé avant. Le tout afin de réaliser une application mobile capable de donner la météo pour la semaine en renseignant le nom d'une ville.
+						</p>
+					</div>
+					<div class="exp-assistant">
+						<h1 class="exp-title">Formation développeur web</h1>
+						<p>Proposée par la <em>Web@cadémie by Epitech</em>, cette formation propose de devenir développeur web Fullstack en l'espace de 2 ans.
+							<br/>
+							Diplomante d'un bac+2 dans les technologies du web, elle se base sur la pédagogie par projet d'Epitech permettant d'apprendre à apprendre mais également à travailler avec rigueur et autonomie.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- ------------------------------------ Partie compétences------------------------------------ -->
+			<div class="pageSlide" id="pageComp">
+				<div class="contain-page">
+					<div class="comp-fav">
+						<h1 class="comp-title">Mes Spécialisations</h1>
+						<table>
+							<tr>
+								<td>ReactJS</td>
+								<td>NodeJS</td>
+							</tr>
+							<tr>
+								<td>Symfony</td>
+								<td>Jquery</td>
+							</tr>
+						</table>
+					</div>
+					<div class="other-comp">
+						<h1 class="comp-title">Connaissances & Compétences</h1>
+						<table>
+							<tr>
+								<td>Laravel</td>
+								<td>Javascript</td>
+								<td>PHP</td>
+							</tr>
+							<tr>
+								<td>Python</td>
+								<td>Django</td>
+								<td>Phaser</td>
+							</tr>
+							<tr>
+								<td>Bootstrap</td>
+								<td>SASS</td>
+								<td>GitLab</td>
+							</tr>
+							<tr>
+								<td>Photoshop</td>
+								<td>HTML/CSS</td>
+								<td>MySQL</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- ------------------------------------ Partie projets ------------------------------------ -->
+			<div class="pageSlide" id="pageMyProject">
+				<div class="contain-page">
+					<div id="github">
+						Retrouvez plus de projet sur <a href="https://github.com/JeromeCyrus" target="_blank">Mon GitHub</a>
+					</div>
+
+					<div id="list-projet">
+						<table>
+							<tr>
+								<td>
+									<div class="glob-td" data-target="#puissance4-details">
+										<div class="img-prez">
+											<img src="img/puissance4.png" alt="image puissance 4" class="img-adapt"/>
+										</div>
+										<div class="title-projet">
+											Puissance 4
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="glob-td" data-target="#tweeter-details">
+										<div class="img-prez">
+											<img src="img/tweetco.png" alt="accueil tweet academie" class="img-adapt"/>
+										</div>
+										<div class="title-projet">
+											Tweet Académie
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="glob-td" data-target="#mypaint-details">
+										<div class="img-prez">
+											<img src="img/mypaint.png" alt="accueil my paint" class="img-adapt"/>
+										</div>
+										<div class="title-projet">
+											My Paint
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="glob-td" data-target="#PreviouslyOn-details">
+										<div class="img-prez">
+											<img src="img/POProfil.png" alt="PreviouslyOn" class="img-adapt"/>
+										</div>
+										<div class="title-projet">
+											Previously On
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="glob-td" data-target="#chessgame-details">
+										<div class="img-prez">
+											<img src="img/chessgame.png" alt="jeu d'échecs" class="img-adapt"/>
+										</div>
+										<div class="title-projet">
+											Jeu d'échecs
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="glob-td" data-target="#doodlerun-details">
+										<div class="img-prez">
+											<img src="img/doodlerun.png" alt="doodle run" class="img-adapt"/>
+										</div>
+										<div class="title-projet">
+											Doodle Run !
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="detail-projet hide" id="puissance4-details">
+						<span class="close"> &times;</span>
+						<a href="Puissance4/testpuissance4.html" target="_blank">
+							<img src="img/puissance4.png" alt="screen puissance 4" class="imgscreen" id="puissance4"/>
+						</a>
+						<div class="text-desc">
+							<h1 class="project-title">PUISSANCE 4</h1> 
+							<p>
+								Un projet de fin de premier semestre de la formation. Le but ? Réaliser un puissance 4.
+								<br/>
+								Vous pourrez y jouer à deux joueurs en local ou contre une IA débutante pour commencer l'entraînement.
+								<br/><br/>
+								<em>Durée : une semaine.</em>
+								<br/><br/>
+								<strong>Réalisé en Jquery</strong>
+							</p>
+						</div>
+						<div class="play-game">
+							<a href="Puissance4/testpuissance4.html" target="_blank">Une petite partie ?</a>
+						</div>
+					</div>
+					<div class="detail-projet hide" id="tweeter-details">
+						<span class="close"> &times;</span>
+						<img src="img/tweetco.png" alt="screen page connexion Tweet acadamie" class="imgscreen"/>
+						<div class="text-desc">
+							<h1 class="project-title">Tweet Academie</h1> 
+							<p>
+								Un projet à réaliser en groupe de 3 en l'espace de 2 semaines. Un groupe appelé solennellement : « #La Revanche des Tweets ».
+								<br/>Ce fut le premier projet de groupe durant le premier semestre. Nous avons utilisé un système de routeur ainsi que le modèle MVC.
+								<br/><br/>
+								<strong>Réalisé à l'aide de PHP, HTML/CSS, Mysql, Bootstrap, Jquery.</strong>
+							</p>
+							<br/><br/>
+							Quelques screens : 
+
+							<ul>
+								<li><a href="img/tweetco.png" target="_blank"> - Page d'accueil</a></li>
+								<li><a href="img/tweetprofil.png" target="_blank">- Page de profil</a></li>
+								<li><a href="img/tweetmessage.png" target="_blank">- Page de messagerie privée</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="detail-projet hide" id="mypaint-details">
+						<span class="close"> &times;</span>
+						<img src="img/mypaint.png" alt="screen my paint" class="imgscreen"/>
+						<div class="text-desc">
+							<h1 class="project-title">My Paint</h1> 
+							<p>
+								Un projet réalisé au cours du deuxième semestre. Le but ? Reproduire au maximum Paint.
+								<br/>
+								Vous pourrez ainsi y dessinez bien des formes grâce aux boutons disponible et même enregistrer votre travail ! De quoi s'amuser et voir le temps passer sans même s'en rendre compte !
+								<br/><br/>
+								<em>Durée : 1 semaine</em>
+								<br/><br/>
+								<strong>Réalisé à l'aide de HTML/CSS, Jquery et le système des canvas.</strong>
+							</p>
+							<div class="play-game">
+								<a href="https://jeromecyrus.github.io/My_Paint/" target="_blank">Envie d'essayer ?</a>
+							</div>
+						</div>
+					</div>
+					<div class="detail-projet hide" id="PreviouslyOn-details">
+						<span class="close"> &times;</span>
+						<img src="img/POProfil.png" alt="screen my paint" class="imgscreen"/>
+						<div class="text-desc">
+							<h1 class="project-title">Previously On</h1> 
+							<p>
+								Un projet réalisé durant le deuxième semestre. L'idée ? Reproduire un Netflix au travers d'une API. Ainsi, sur ce site, vous pourrez lister vos séries à regarder et savoir quels épisodes de quelles séries vous avez regardé !
+								<br/><br/>
+								<em>Durée : 2 semaines</em>
+								<br/><br/>
+								<strong>Réalisé à l'aide de ReactJS et NodeJS</strong>
+							</p>
+							<br/><br/>
+							Quelques screens : 
+
+							<ul>
+								<li><a href="img/tweetco.png" target="_blank"> - Page d'une série</a></li>
+								<li><a href="img/tweetprofil.png" target="_blank">- Page pour lister les épisodes</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="detail-projet hide" id="chessgame-details">
+						<span class="close"> &times;</span>
+						<img src="img/chessgame.png" alt="screen jeu d'échecs" class="imgscreen"/>
+						<div class="text-desc">
+							<h1 class="project-title">Jeu d'échecs</h1> 
+							<p>
+								Un projet personnel que j'ai commencé durant mon temps libre. Le principe est simple : réaliser un jeu d'échecs fonctionnel à l'aide de Jquery.
+								<br/>
+								Le projet n'est malheureusement pas terminé et reste en cours de développement. Pour l'heure, vous pourrez juste déplacer les pions !
+								<br/><br/>
+								<strong>Réalisé à l'aide de HTML/CSS et Jquery.</strong>
+							</p>
+						</div>
+					</div>
+					<div class="detail-projet hide" id="doodlerun-details">
+						<span class="close"> &times;</span>
+						<img src="img/doodlerun.png" alt="screen doodle run" class="imgscreen"/>
+						<div class="text-desc">
+							<h1 class="project-title">Doodle Run !</h1> 
+							<p>
+								Réalisé dans la fin du troisième semestre de la formation, ce projet nous a demandé de créer un jeu HTML.
+								<br/>
+								Pour ma part, j'ai décidé de réaliser un petit mélange entre Doodler Jump et le jeu du dinosaure disponible lors des terribles pertes d'internet sur Chrome.
+								<br/>
+								Les règles sont simples : démarrer et aller le plus loin possible en esquivant les platformes !
+								<br/>
+								Le jeu peut être encore améliorer en ajoutant des difficultés, de nouvelles plafeformes et bien d'autres choses !
+								<br/><br/>
+								<em>Durée : 2 semaines</em>
+								<br/>
+								<strong>Réalisé à l'aide de Phaser.</strong>
+							</p>
+						</div>
+						<div class="play-game">
+							<a href="doodlerun/index.html" target="_blank">Une petite partie ?</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ------------------------------------ Partie Hobby ------------------------------------ -->
+			<div class="pageSlide" id="pageHobby">
+				<div class="contain-page">
+					<div class="hobby-desc">
+						<h1 class="hobby-title">Mes loisirs</h1>
+						<p>
+							Grand fan de <em>jeux vidéos</em>, je ne compte plus le nombre d'heures durant lesquelles j'ai pu jouer. Ni le nombre de jeux. En solo mais surtout en multi !
+						</p>
+						<p>
+							Amateur de <em>cinéma</em>, nombreux sont les films et les séries que j'ai pu regarder une ou plusieurs fois. Sans oublier les mangas, manhwas ou webtoons.
+						</p>
+						<p>
+							Moins connus du grand public, les <em>forums RPG</em> font aussi partis de mes passe-temps préférés. Créer et incarner un personnage un peu différemment d'un jeu vidéo est toujours intéressant !
+						</p>
+					</div>
+
+					<div class="hobby-lang">
+						<h1 class="hobby-title">Surveille ton langage !</h1>
+						<p>
+							Français courant à l'oral et écrit 
+						</p>
+						<p>
+							Anglais technique
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+	<script src="js/jquery.js"></script>
+	<script src="js/navbar.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/projet.js"></script>
+</body>
+</html>
